@@ -1,0 +1,55 @@
+*, *::after, *::before {
+  box-sizing: border-box;
+}
+
+:root {
+  --ff: 'Josefin Sans', sans-serif;
+  --primary-clr: #027036;
+  --secondary-clr: #ecde21;
+  --text-color: rgba(233, 236, 233, .75);
+}
+
+body {
+  font-family: var(--ff);
+  font-size: 1.25rem;
+  color: var(--text-color);
+  margin: 0;
+}
+
+.card-deck {
+  text-align: center;
+  background-color: var(--primary-clr);
+  background: url("./images/table.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* BUTTONS */
+.btn {
+  cursor: pointer;
+  text-transform: uppercase ;
+  font-size: 1.25rem;
+  background: var(--secondary-clr);
+  border: none;
+}
+
+.btn:disabled {
+  cursor: not-allowed;
+}
+
+#get-deck {
+  padding: .75em 3em;
+  align-self: flex-start;
+}
+
+#get-cards {
+  width: 100%;
+  padding: .75em 0;
+}
+
